@@ -20,8 +20,8 @@ namespace API.Controllers
         public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
         {
             var users = await context.Users.ToListAsync();
-            //return Ok(users);
-            return users;
+            return Ok(users);
+            //return users;
 
         }
 
